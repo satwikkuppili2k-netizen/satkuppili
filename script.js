@@ -8,6 +8,7 @@ const publications = [
   ["07","SARS-COV-2 and its variants of concern including Omicron","Chemical Biology and Drug Design · Wiley"],
   ["08","Consecutive Hits of COVID-19 in India — the mystery of plummeting cases and current scenario","Advances in Biomedical and Health Sciences"],
   ["09","Thromboembolism and Anticoagulation Therapy Among the Patients with COVID-19","Annals of Clinical Cardiology"],
+    ["21","Diagnostic and prognostic value of plasma D-dimer levels for metastasis and survival in gastric cancer: A systematic review and meta-analysis","Journal of Clinical Oncology · 2026 ASCO Annual Meeting I"]];
   ["10","Concept Proposal for Nationalised Formative and Summative Assessments to Enhance the Preparedness of Medical Students for the National Exit Test (NExT) and Solution for Low …","Global Journal of Medical Students"],
   ["11","The role of lifestyle in prevention and treatment of gastroesophageal reflux disease","Archives of Razi Institute"],
   ["12","A rare Case of complete Cryptophthalmus and suspected Frasers syndrome in a Female Neonate","Clinical Medicine Insights: Case Reports · SAGE"],
@@ -18,9 +19,8 @@ const publications = [
   ["17","Medical tourism — Patients without Borders","Global Journal of Medical Students"],
   ["18","Unravelling genetic landscape of sickle cell disease in India","Medicine — India"],
   ["19","Beyond Monotherapy: The Emerging Promise of Finerenone–Empagliflozin Combination in Diabetic Chronic Kidney Disease","International Journal of Contemporary Medicine · Published 2026"],
-  ["20","Not just a weight-loss drug: The expanding role of GLP-1 agonists in Chronic Kidney disease and transplantation","African Journal of Medicine · Under Review"],
-  ["21","Diagnostic and prognostic value of plasma D-dimer levels for metastasis and survival in gastric cancer: A systematic review and meta-analysis","Journal of Clinical Oncology · 2026 ASCO Annual Meeting I"]
-];
+ ];
+
 
 const publicationLinks = {
   "01": "https://doi.org/10.21037/jgo-2025-385",
