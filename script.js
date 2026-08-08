@@ -18,8 +18,9 @@ const publications = [
   ["16","From petechiae to Intracerebral Haemorrhage: A rare progression of pediatric Idiopathic thrombocytopenia","Cureus"],
   ["17","Medical tourism — Patients without Borders","Global Journal of Medical Students"],
   ["18","Unravelling genetic landscape of sickle cell disease in India","Medicine — India"],
-  ["19","Beyond Monotherapy: The Emerging Promise of Finerenone–Empagliflozin Combination in Diabetic Chronic Kidney Disease","International Journal of Contemporary Medicine · Published 2026"],
- ];
+  ["19","Beyond Monotherapy: The Emerging Promise of Finerenone–Empagliflozin Combination in Diabetic Chronic Kidney Disease","International Journal of Contemporary Medicine · Published 2026"]
+];
+ 
 
 
 const publicationLinks = {
