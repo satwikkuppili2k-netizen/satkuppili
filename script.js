@@ -7,7 +7,7 @@ const publications = [
   ["06","Endoscopic Ultrasound (EUS) vs Magnetic Resonance Cholangiopancreatography (MRCP) in the Etiological Evaluation of Idiopathic Acute Pancreatitis: A Systematic Review and Meta Analysis","Digestive Diseases and Sciences"],
   ["07","SARS-COV-2 and its variants of concern including Omicron","Chemical Biology and Drug Design · Wiley"],
   ["08","Consecutive Hits of COVID-19 in India — the mystery of plummeting cases and current scenario","Advances in Biomedical and Health Sciences"],
-  ["09","Thrombo embolism in COVID Patients","Annals of Clinical Cardiology · Wolters Kluwer"],
+  ["09","Thromboembolism and Anticoagulation Therapy Among the Patients with COVID-19","Annals of Clinical Cardiology"],
   ["10","Concept Proposal for Nationalised Formative and Summative Assessments to Enhance the Preparedness of Medical Students for the National Exit Test (NExT) and Solution for Low …","Global Journal of Medical Students"],
   ["11","The role of lifestyle in prevention and treatment of gastroesophageal reflux disease","Archives of Razi Institute"],
   ["12","A rare Case of complete Cryptophthalmus and suspected Frasers syndrome in a Female Neonate","Clinical Medicine Insights: Case Reports · SAGE"],
@@ -16,10 +16,10 @@ const publications = [
   ["15","Medical students and their interests beyond medicine","National Medical Journal of India"],
   ["16","From petechiae to Intracerebral Haemorrhage: A rare progression of pediatric Idiopathic thrombocytopenia","Cureus"],
   ["17","Medical tourism — Patients without Borders","Global Journal of Medical Students"],
-  ["18","Sculpting Tomorrow's surgeons: Insights from Indian Undergraduate students in plastic surgery","Cureus"],
-  ["19","Unravelling genetic landscape of sickle cell disease in India","Medicine — India"],
-  ["20","Beyond Monotherapy: The Emerging Promise of Finerenone–Empagliflozin Combination in Diabetic CKD — A literature Review","Medical Laboratory Journal · Under Review"],
-  ["21","Not just a weight-loss drug: The expanding role of GLP-1 agonists in Chronic Kidney disease and transplantation","African Journal of Medicine · Under Review"]
+  ["18","Unravelling genetic landscape of sickle cell disease in India","Medicine — India"],
+  ["19","Beyond Monotherapy: The Emerging Promise of Finerenone–Empagliflozin Combination in Diabetic Chronic Kidney Disease","International Journal of Contemporary Medicine · Published 2026"],
+  ["20","Not just a weight-loss drug: The expanding role of GLP-1 agonists in Chronic Kidney disease and transplantation","African Journal of Medicine · Under Review"],
+  ["21","Diagnostic and prognostic value of plasma D-dimer levels for metastasis and survival in gastric cancer: A systematic review and meta-analysis","Journal of Clinical Oncology · 2026 ASCO Annual Meeting I"]
 ];
 
 const publicationLinks = {
@@ -31,6 +31,7 @@ const publicationLinks = {
   "06": "https://doi.org/10.1007/s10620-025-09408-x",
   "07": "https://doi.org/10.1111/cbdd.14035",
   "08": "https://doi.org/10.22092/ari.2021.356147.1791",
+  "09": "https://www.ovid.com/jnls/accd/fulltext/10.4103/accj.accj_45_20~thromboembolism-and-anticoagulation-therapy-among-the",
   "10": "https://doi.org/10.52314/gjms.2022.v2i3.93",
   "11": "https://doi.org/10.4103/abhs.abhs_9_23",
   "12": "https://doi.org/10.1177/11795476231189042",
@@ -39,7 +40,9 @@ const publicationLinks = {
   "15": "https://doi.org/10.25259/NMJI_173_2024",
   "16": "https://doi.org/10.7759/cureus.80818",
   "17": "https://doi.org/10.25259/GJMS_3_2024",
-  "19": "https://doi.org/10.25259/MEDINDIA_33_2025"
+  "18": "https://doi.org/10.25259/MEDINDIA_33_2025",
+  "19": "https://ijop.net/index.php/ijocm/article/view/3717",
+  "21": "https://ascopubs.org/doi/abs/10.1200/jco.2026.44.16_suppl.e16089"
 };
 
 const conferences = [
