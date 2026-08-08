@@ -1,144 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Satwik Kuppili, MBBS — physician, medical researcher and academic portfolio.">
-<title>Satwik Kuppili, MBBS | Physician & Medical Researcher</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Satwik Kuppili — Physician and Medical Researcher">
+  <title>Satwik Kuppili | Physician & Medical Researcher</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="nav">
-  <a class="brand" href="#top">SK<span>.</span></a>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#research">Research</a>
-    <a href="#publications">Publications</a>
-    <a href="#awards">Awards</a>
-    <a href="#experience">Experience</a>
-    <a href="#contact">Contact</a>
-  </nav>
-  <a class="nav-cv" href="cv.pdf" target="_blank">View CV ↗</a>
-</header>
+  <header class="site-header">
+    <a class="brand" href="#home">SK<span>.</span></a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#conferences">Conferences</a>
+      <a href="#awards">Awards</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="header-cv" href="cv.pdf" target="_blank" rel="noopener">View CV ↗</a>
+  </header>
 
-<main id="top">
-<section class="hero">
-  <div class="hero-copy">
-    <p class="eyebrow">PHYSICIAN · MEDICAL RESEARCHER</p>
-    <h1>Satwik<br><em>Kuppili</em></h1>
-    <p class="lead">Building a career at the intersection of clinical medicine, evidence-based research, medical education and innovation.</p>
-    <div class="actions">
-      <a class="button primary" href="cv.pdf" target="_blank">View Curriculum Vitae</a>
-      <a class="button secondary" href="#publications">Explore research</a>
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow">PHYSICIAN · MEDICAL RESEARCHER</p>
+        <h1>Satwik<br><em>Kuppili</em></h1>
+        <p class="hero-text">Building a career at the intersection of clinical medicine, evidence-based research, medical education and innovation.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="cv.pdf" target="_blank">View Curriculum Vitae</a>
+          <a class="button secondary" href="#research">Explore Research</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>17+</strong><span>research works listed</span></div>
+          <div><strong>14</strong><span>awards & distinctions</span></div>
+          <div><strong>14</strong><span>conference entries</span></div>
+        </div>
+      </div>
+      <div class="hero-panel">
+        <div class="panel-kicker">PROFILE</div>
+        <div class="panel-title">Evidence.<br>Research.<br><span>Medicine.</span></div>
+        <div class="panel-line"></div>
+        <p>Physician · Researcher · Educator · Speaker</p>
+      </div>
+    </section>
+
+    <section id="about" class="section light">
+      <div class="section-heading">
+        <p class="eyebrow">01 · ABOUT</p>
+        <h2>A portfolio built around<br><em>medicine and research.</em></h2>
+      </div>
+      <div class="two-column">
+        <div class="lead">
+          <p>I am a post-intern physician and USMLE aspirant actively pursuing opportunities in Internal Medicine residency in the United States.</p>
+          <p>My work spans clinical research, systematic reviews and meta-analyses, medical education, student leadership, public speaking and healthcare innovation.</p>
+        </div>
+        <div class="info-card">
+          <span>EDUCATION</span>
+          <h3>Konaseema Institute of Medical Sciences</h3>
+          <p>MBBS · 2018–2024</p>
+          <div class="rule"></div>
+          <span>INTEREST</span>
+          <p>Clinical medicine · Evidence synthesis · Medical education · Healthcare innovation</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="research" class="section dark">
+      <div class="section-heading">
+        <p class="eyebrow">02 · RESEARCH</p>
+        <h2>From clinical questions<br>to <em>evidence.</em></h2>
+      </div>
+      <div class="research-grid">
+        <article><span>01</span><h3>Evidence Synthesis</h3><p>Systematic reviews and meta-analyses across gastroenterology, oncology, hepatology and acute pancreatitis.</p></article>
+        <article><span>02</span><h3>Clinical Research</h3><p>Published and ongoing work spanning colorectal cancer, transplantation, COVID-19, CKD and medical education.</p></article>
+        <article><span>03</span><h3>Medical Education</h3><p>Research and educational initiatives focused on medical students, examinations, residency preparation and teaching.</p></article>
+        <article><span>04</span><h3>Innovation</h3><p>Experience in ideathons, med-hackathons, AI simulation medicine and healthcare communication.</p></article>
+      </div>
+    </section>
+
+    <section id="publications" class="section light">
+      <div class="section-heading row-heading">
+        <div><p class="eyebrow">03 · PUBLICATIONS</p><h2>Selected <em>work.</em></h2></div>
+        <p class="muted">Publication links can be added individually as DOI, PubMed or journal URLs.</p>
+      </div>
+      <div id="publication-grid" class="publication-grid"></div>
+    </section>
+
+    <section id="conferences" class="section offwhite">
+      <div class="section-heading">
+        <p class="eyebrow">04 · CONFERENCES</p>
+        <h2>Research beyond<br>the <em>page.</em></h2>
+        <p class="muted">Each conference can have its own photographs, posters, certificates and presentation material.</p>
+      </div>
+      <div id="conference-grid" class="conference-grid"></div>
+    </section>
+
+    <section id="awards" class="section dark">
+      <div class="section-heading">
+        <p class="eyebrow">05 · AWARDS & DISTINCTIONS</p>
+        <h2>Recognition for<br><em>research and leadership.</em></h2>
+      </div>
+      <div id="award-list" class="award-list"></div>
+    </section>
+
+    <section id="experience" class="section light">
+      <div class="section-heading">
+        <p class="eyebrow">06 · EXPERIENCE</p>
+        <h2>Leadership,<br><em>education & service.</em></h2>
+      </div>
+      <div id="experience-list" class="timeline"></div>
+      <div class="skills">
+        <div><span>PROFESSIONAL SKILLS</span><p>Public speaking · Education module design · Team management · Research paper writing and editing</p></div>
+        <div><span>PERSONAL & CREATIVE</span><p>Wildlife photography · Script writing · Kabaddi</p></div>
+      </div>
+    </section>
+
+    <section class="section cv-banner">
+      <div>
+        <p class="eyebrow">CURRICULUM VITAE</p>
+        <h2>The complete academic profile.</h2>
+      </div>
+      <div class="hero-actions">
+        <a class="button light-button" href="cv.pdf" target="_blank">View CV</a>
+        <a class="button outline-button" href="cv.pdf" download>Download CV</a>
+      </div>
+    </section>
+
+    <section id="contact" class="section light contact">
+      <div class="section-heading">
+        <p class="eyebrow">07 · CONTACT</p>
+        <h2>Let's connect.</h2>
+      </div>
+      <div class="contact-grid">
+        <a href="mailto:satwikkuppili2k@gmail.com"><span>EMAIL</span><strong>satwikkuppili2k@gmail.com</strong></a>
+        <div><span>PHONE</span><strong>+91 6304220120</strong></div>
+        <div><span>ONLINE</span><strong>Add LinkedIn · ORCID · Google Scholar</strong></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>SK<span>.</span> · Satwik Kuppili</div>
+    <div>Physician · Medical Researcher</div>
+  </footer>
+
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-box">
+      <button class="modal-close" data-close aria-label="Close">×</button>
+      <div id="modal-content"></div>
     </div>
-    <div class="stats">
-      <div><strong>17+</strong><span>Research publications<br>& academic articles</span></div>
-      <div><strong>14+</strong><span>Academic awards &amp;<br>recognitions listed</span></div>
-      <div><strong>20+</strong><span>Conferences, presentations<br>& academic activities</span></div>
-    </div>
   </div>
-  <div class="hero-card">
-    <div class="orb"></div>
-    <div class="card-label">PROFILE</div>
-    <div class="card-title">Evidence.<br>Research.<br>Medicine.</div>
-    <div class="card-footer">MBBS · India<br>USMLE aspirant · Internal Medicine</div>
-  </div>
-</section>
 
-<section id="about" class="section split">
-  <div>
-    <p class="eyebrow">01 / ABOUT</p>
-    <h2>Medicine with a<br><em>research mindset.</em></h2>
-  </div>
-  <div class="body-copy">
-    <p>Satwik Kuppili is an MBBS graduate and medical researcher pursuing opportunities to expand his clinical and academic work, with an interest in Internal Medicine residency in the United States.</p>
-    <p>His academic portfolio includes systematic reviews and meta-analyses, clinical and translational topics, medical education, healthcare informatics and multidisciplinary research.</p>
-    <p>Beyond medicine, he has an interest in wildlife photography and has participated in educational, community and student-led initiatives.</p>
-  </div>
-</section>
-
-<section id="research" class="section dark">
-  <div class="section-head">
-    <div><p class="eyebrow">02 / RESEARCH</p><h2>Areas of <em>work</em></h2></div>
-    <p class="section-intro">Selected themes represented in the academic portfolio.</p>
-  </div>
-  <div class="research-grid">
-    <article><span>01</span><h3>Evidence Synthesis</h3><p>Systematic reviews and meta-analyses across gastroenterology, oncology and internal medicine.</p></article>
-    <article><span>02</span><h3>Clinical Medicine</h3><p>Research spanning colorectal cancer, pancreatitis, CKD, transplantation and infectious disease.</p></article>
-    <article><span>03</span><h3>Medical Education</h3><p>Work on medical examinations, student perspectives, curriculum design and educational modules.</p></article>
-    <article><span>04</span><h3>Health & AI</h3><p>Healthcare informatics, artificial intelligence, medical simulation and technology-enabled education.</p></article>
-  </div>
-</section>
-
-<section id="publications" class="section">
-  <div class="section-head">
-    <div><p class="eyebrow">03 / PUBLICATIONS</p><h2>Selected <em>work</em></h2></div>
-    <p class="section-intro">Selected publications and academic articles from the submitted CV.</p>
-  </div>
-  <div class="pub-list">
-    <article><span>01</span><div><h3>Efficacy and Safety of Fruquintinib in Refractory Metastatic Colorectal Cancer</h3><p>Systematic Review and Meta-Analysis · Journal of Gastrointestinal Oncology</p></div></article>
-    <article><span>02</span><div><h3>Comparing the Safety and Efficacy of Resmetirom and Semaglutide in MASLD</h3><p>Pharmacoepidemiology · MDPI</p></div></article>
-    <article><span>03</span><div><h3>Artificial Intelligence in Biomedical and Modern Healthcare Informatics</h3><p>Co-authored Chapter 27 · Elsevier</p></div></article>
-    <article><span>04</span><div><h3>Prevalence of Colorectal Cancer in Solid Organ Transplant</h3><p>Systematic review · Clinical Transplant</p></div></article>
-    <article><span>05</span><div><h3>EUS vs MRCP in the Etiological Evaluation of Idiopathic Acute Pancreatitis</h3><p>Systematic Review and Meta-Analysis · Digestive Diseases and Sciences</p></div></article>
-    <article><span>06</span><div><h3>SARS-COV-2 and its Variants of Concern Including Omicron</h3><p>Chemical Biology and Drug Design · Wiley</p></div></article>
-    <article><span>07</span><div><h3>A Fungus Among Us: The Strange Tale of Chondrostereum Purpureum</h3><p>Correspondence · New Microbes and New Infections</p></div></article>
-    <article><span>08</span><div><h3>Unravelling Genetic Landscape of Sickle Cell Disease in India</h3><p>Medicine - India</p></div></article>
-  </div>
-</section>
-
-<section id="awards" class="section accent">
-  <div class="section-head">
-    <div><p class="eyebrow">04 / RECOGNITION</p><h2>Selected <em>awards</em></h2></div>
-  </div>
-  <div class="award-grid">
-    <div><strong>01</strong><p>Smt. C. Janaki Medal for Best Research — Government of Andhra Pradesh</p></div>
-    <div><strong>02</strong><p>$500 Walter E. Dandy Neurosurgical Society scholarship — 9th World Congress of Neurosurgery</p></div>
-    <div><strong>03</strong><p>Award of Excellence — American Association of Physicians of Indian Origin (AAPI)</p></div>
-    <div><strong>04</strong><p>Best Research Paper — Southern Medical Students Annual Conference 2022</p></div>
-    <div><strong>05</strong><p>Best Research Paper — APMEDUCON 13, 2023</p></div>
-    <div><strong>06</strong><p>1st Place Med Hackathon — GOMECON 2023</p></div>
-    <div><strong>07</strong><p>2nd Place AI Simulation Medicine — GOMECON 2023</p></div>
-    <div><strong>08</strong><p>Best Case Presentation — Southern Medical Students Annual Research Conference 2023</p></div>
-  </div>
-</section>
-
-<section id="experience" class="section split">
-  <div>
-    <p class="eyebrow">05 / EXPERIENCE</p>
-    <h2>Academic &amp;<br><em>leadership</em></h2>
-  </div>
-  <div class="timeline">
-    <div><span>Research</span><h3>Research Team Lead — Squad Medicine Research</h3></div>
-    <div><span>Leadership</span><h3>South Zone Director — Global Association of Indian Medical Students</h3></div>
-    <div><span>Education</span><h3>Community Facilitator — Rubaroo</h3><p>Designed curriculum and taught underprivileged children.</p></div>
-    <div><span>Communication</span><h3>Designer & Speaker — Cyber Vakeel</h3><p>Invited by the Government of Telangana to design a public education campaign addressing cyber sexual harassment, particularly involving children.</p></div>
-    <div><span>Medicine</span><h3>Online Psychology Intern — Psyk Life</h3></div>
-    <div><span>Academic media</span><h3>Speaker & Script Writer — Auricle</h3></div>
-  </div>
-</section>
-
-<section class="section skills">
-  <p class="eyebrow">06 / SKILLS & INTERESTS</p>
-  <div class="pill-wrap">
-    <span>Public Speaking</span><span>Research Writing</span><span>Research Editing</span><span>Education Module Design</span><span>Team Management</span><span>Wildlife Photography</span><span>Script Writing</span><span>Kabaddi</span>
-  </div>
-</section>
-
-<section id="contact" class="contact">
-  <div>
-    <p class="eyebrow">07 / CONTACT</p>
-    <h2>Let's connect.</h2>
-    <p>For academic, research or professional opportunities.</p>
-  </div>
-  <div class="contact-links">
-    <a href="mailto:satwikkuppili2k@gmail.com">satwikkuppili2k@gmail.com ↗</a>
-    <a href="tel:+916304220120">+91 6304220120 ↗</a>
-    <a href="cv.pdf" target="_blank">Curriculum Vitae ↗</a>
-  </div>
-</section>
-</main>
-
-<footer><span>© 2026 Satwik Kuppili</span><span>Physician · Researcher · Academic</span></footer>
+  <script src="script.js"></script>
 </body>
 </html>
