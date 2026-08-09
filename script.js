@@ -251,21 +251,21 @@ extracurricularTabs.forEach(tab => {
 
 renderExtracurriculars("Photography");
 
-const aboutBtn = document.getElementById("aboutBtn");
+document.addEventListener("click", function(e) {
+    const about = e.target.closest("#aboutBtn");
 
-if (aboutBtn) {
-    aboutBtn.addEventListener("click", (e) => {
-        e.preventDefault();
+    if (!about) return;
 
-        const aboutSection = document.getElementById("about");
+    e.preventDefault();
 
-        modalContent.innerHTML = aboutSection.innerHTML;
+    const aboutSection = document.getElementById("about");
 
-        modal.classList.add("open");
-        modal.setAttribute("aria-hidden", "false");
-    });
-}
+    if (!aboutSection) return;
 
+    modalContent.innerHTML = aboutSection.innerHTML;
+    modal.classList.add("open");
+    modal.setAttribute("aria-hidden", "false");
+});
 
 document.querySelectorAll("[data-close]").forEach(el => el.addEventListener("click", closeModal));
 document.addEventListener("keydown", e => { if(e.key === "Escape") closeModal(); });
