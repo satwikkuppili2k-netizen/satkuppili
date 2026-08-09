@@ -45,23 +45,23 @@ const publicationLinks = {
 };
 
 const conferences = [
-  ["2026","Global Health Summit — AAPI","Bhubaneswar, Orissia · Won 3rd place in poster presentation.","3rd place · Poster Presentation","global-health-summit-aapi-2026"],
-  ["2025","REDRESS 2025","Tata Institute for Genetics and Society, Bangalore · Presented a rare genetic case.","Rare Genetic Case Presentation","redress-2025"],
-  ["2025","HOU Summit 2025","Hyderabad · Presented 2 posters.","2 Poster Presentations","hou-summit-2025"],
-  ["2023","APMEDUCON 13","Srikakulam, Andhra Pradesh · Awarded the Smt. C. Janaki Medal for Best Paper Presentation; 2nd place for Best Poster.","Best Paper · 2nd Best Poster","apmeducon-13-2023"],
-  ["2023","GOMECON — Goa Medical College","Goa Medical College, Goa · Won 1st place in Med Hackathon; 2nd place in AI Simulation Medicine.","1st · 2nd","gomecon-2023"],
-  ["2023","Southern Medical Students Annual Research Conference","KIMS, Amalapuram · Won Best Case Presentation award; presented paper, poster and case.","Best Case Presentation","smarc-2023"],
-  ["2023","HOU Summit 2023","Hyderabad · Presented a case in the form of a poster.","Case Poster","hou-summit-2023"],
-  ["2023","JIPMER Conniassance","JIPMER, Pondicherry · Final Top 10 and presented research.","Top 10 · Research","jipmer-conniassance-2023"],
-  ["2023","9th World Congress of Neurosurgery","Vijayran Palace, Jaipur · Received a $500 scholarship from the Walter E. Dandy Neurosurgical Society.","$500 Scholarship","9th-world-congress-neurosurgery-2023"],
-  ["2022","Southern Medical Students Annual Research Conference (SMARC)","KIMS, Amalapuram · First place in Research Paper presentation; consolation prize in Case presentation.","1st Place · Case Presentation","smarc-2022"],
-  ["2022","GOMECON — Goa Medical College","Goa Medical College, Goa · Poster presentation; Top-10 in paper presentation (out of more than 100); 3rd place in Med-Hackathon.","Poster · Top-10 · 3rd Place","gomecon-2022"],
-  ["2022","SIMSA — General Conclave","Chennai · Organising Committee of the General Conclave of the South Indian Medical Students Association.","Organising Committee","simsa-general-conclave-2022"],
-  ["2022","Insight — AIIMS New Delhi","AIIMS, New Delhi · Participated in Research presentation and case presentation.","Research · Case Presentation","insight-2022-aiims"],
-  ["2022","FMPC — Family Medicine and Primary Care","Apollo Institute of Medical Sciences, Hyderabad · Awarded National Student Award; represented GAIMS at the annual conference.","National Student Award · GAIMS Representative","fmpc-2022"],
-  ["2022","Global Health Summit","Hyderabad · Co-organiser; awarded Award of Excellence.","Co-organiser · Award of Excellence","global-health-summit-2022"],
-  ["2021","Illuminati — AFMC","Armed Forces Medical College (AFMC), Pune · Participated in Research Paper presentation.","Research Paper Presentation","illuminati-2021-afmc"],
-  ["2021","SIMSA — General Body Meet","Pondicherry · Represented Andhra Pradesh in the South Indian Medical Students Association's first General Conclave.","Represented Andhra Pradesh","simsa-general-body-meet-2021"]
+  ["2026","Global Health Summit — 2026, AAPI","Bhubaneswar, Odisha. Winner — 3rd place research presentation.","3rd place · Research Presentation"],
+  ["2025","REDRESS 2025","Tata Institute for Genetics and Society, Bangalore. Presented a rare genetic case.","Rare genetic case"],
+  ["2025","HOU Summit 2025","Hyderabad. Presented 2 posters.","2 posters"],
+  ["2023","APMEDUCON — 2023","Srikakulam, Andhra Pradesh. Awarded Smt. C. Janaki Medal for Best Paper Presentation; 2nd place for Best Poster.","Best Paper · 2nd place Poster"],
+  ["2023","GOMECON 2023","Goa Medical College, Goa. Won 1st place in Med Hackathon and 2nd place in AI Simulation Medicine.","1st · 2nd"],
+  ["2023","Southern Medical Students Annual Research Conference — 2023","KIMS, Amalapuram. Won Best Case Presentation award; presented paper, poster and case.","Best Case Presentation"],
+  ["2023","HOU Summit — 2023","Hyderabad. Presented a case in the form of a poster.","Poster Presentation"],
+  ["2023","JIPMER Conniassance — 2023","JIPMER, Pondicherry. Final Top 10 and presented research.","Top 10 · Research"],
+  ["2023","9th World Congress of Neurosurgery — 2023","Vijayran Palace, Jaipur. Received a $500 scholarship from the Walter E. Dandy Neurosurgical Society.","$500 Scholarship"],
+  ["2022","Southern Medical Students Annual Research Conference (SMARC) — 2022","KIMS, Amalapuram. First place in Research Paper presentation; consolation prize in Case presentation.","1st place · Case Presentation"],
+  ["2022","GOMECON 2022","Goa Medical College, Goa. Participated in Poster presentation; Top-10 in paper presentation; 3rd place in Med-Hackathon.","Top-10 · 3rd place"],
+  ["2022","SIMSA — General Conclave, 2022","Chennai. Organising Committee of the General Conclave of South Indian Medical Students Association.","Organising Committee"],
+  ["2022","Insight 2022","AIIMS, New Delhi. Participated in Research presentation and case presentation.","Research · Case Presentation"],
+  ["2022","FMPC — 2022, Family Medicine and Primary Care","Apollo Institute of Medical Sciences, Hyderabad. Awarded National Student Award; represented Global Association of Indian Medical Students (GAIMS).","National Student Award · GAIMS"],
+  ["2022","Global Health Summit 2022","Hyderabad. Co-organiser; awarded Award of Excellence.","Co-organiser · Award of Excellence"],
+  ["2021","Illuminati 2021","Armed Forces Medical College (AFMC), Pune. Participated in Research Paper presentation.","Research Paper Presentation"],
+  ["2021","SIMSA — General Body Meet 2021","Pondicherry. Represented Andhra Pradesh in the South Indian Medical Students Association's first General Conclave.","Represented Andhra Pradesh"]
 ];
 
 const awards = [
@@ -97,49 +97,49 @@ const experiences = [
   ["Auricle","Speaker · Script writer","Paid educational app where medical education was taught through short videos of less than a minute."]
 ];
 
+
+/* ============================================================
+   IMAGE / MEDIA CONFIGURATION
+   ============================================================ */
 const aboutImages = [
   "assets/about/about-01.jpg",
   "assets/about/about-02.jpg"
 ];
 
-const conferenceImages = {};
-conferences.forEach(c => {
-  const countBySlug = {
-    "global-health-summit-aapi-2026": 4,
-    "redress-2025": 2,
-    "hou-summit-2025": 3,
-    "apmeducon-13-2023": 3,
-    "gomecon-2023": 3,
-    "smarc-2023": 3,
-    "hou-summit-2023": 2,
-    "jipmer-conniassance-2023": 3,
-    "9th-world-congress-neurosurgery-2023": 4,
-    "smarc-2022": 3,
-    "gomecon-2022": 2,
-    "simsa-general-conclave-2022": 1,
-    "insight-2022-aiims": 2,
-    "fmpc-2022": 1,
-    "global-health-summit-2022": 3,
-    "illuminati-2021-afmc": 1,
-    "simsa-general-body-meet-2021": 3
-  };
-  conferenceImages[c[1]] = Array.from({length: countBySlug[c[4]]}, (_, i) =>
-    `assets/conferences/${c[4]}-${String(i+1).padStart(2,"0")}.jpg`
-  );
-});
+const conferenceImages = {
+  "Global Health Summit — 2026, AAPI": ["assets/conferences/global-health-summit-2026-by-aapi-01.jpg", "assets/conferences/global-health-summit-2026-by-aapi-02.jpg", "assets/conferences/global-health-summit-2026-by-aapi-03.jpg"],
+  "REDRESS 2025": ["assets/conferences/redress-2025-01.jpg", "assets/conferences/redress-2025-02.jpg"],
+  "HOU Summit 2025": [],
+  "APMEDUCON — 2023": ["assets/conferences/apmeducon-2023-01.jpg", "assets/conferences/apmeducon-2023-02.jpg", "assets/conferences/apmeducon-2023-03.jpg"],
+  "GOMECON 2023": ["assets/conferences/gomecon-2023-01.jpg", "assets/conferences/gomecon-2023-02.jpg", "assets/conferences/gomecon-2023-03.jpg"],
+  "Southern Medical Students Annual Research Conference — 2023": ["assets/conferences/southern-medical-students-annual-research-centre-2023-01.jpg", "assets/conferences/southern-medical-students-annual-research-centre-2023-02.jpg", "assets/conferences/southern-medical-students-annual-research-centre-2023-03.jpg"],
+  "HOU Summit — 2023": ["assets/conferences/hou-summit-2023-01.jpg", "assets/conferences/hou-summit-2023-02.jpg", "assets/conferences/hou-summit-2023-03.jpg"],
+  "JIPMER Conniassance — 2023": ["assets/conferences/jipmer-conniassance-2023-01.jpg", "assets/conferences/jipmer-conniassance-2023-02.jpg"],
+  "9th World Congress of Neurosurgery — 2023": ["assets/conferences/9th-world-congress-of-neurosurgery-2023-01.jpg", "assets/conferences/9th-world-congress-of-neurosurgery-2023-02.jpg", "assets/conferences/9th-world-congress-of-neurosurgery-2023-03.jpg"],
+  "Southern Medical Students Annual Research Conference (SMARC) — 2022": ["assets/conferences/southern-medical-students-annual-research-conference-smarc-2022-01.jpg", "assets/conferences/southern-medical-students-annual-research-conference-smarc-2022-02.jpg", "assets/conferences/southern-medical-students-annual-research-conference-smarc-2022-03.jpg", "assets/conferences/southern-medical-students-annual-research-conference-smarc-2022-04.jpg", "assets/conferences/southern-medical-students-annual-research-conference-smarc-2022-05.jpg", "assets/conferences/southern-medical-students-annual-research-conference-smarc-2022-06.jpg", "assets/conferences/southern-medical-students-annual-research-conference-smarc-2022-07.jpg"],
+  "SIMSA — General Conclave, 2022": ["assets/conferences/simsa-general-conclave-2022-01.jpg", "assets/conferences/simsa-general-conclave-2022-02.jpg", "assets/conferences/simsa-general-conclave-2022-03.jpg"],
+  "FMPC — 2022, Family Medicine and Primary Care": ["assets/conferences/fmpc-2022-family-medicine-and-primary-care-01.jpg", "assets/conferences/fmpc-2022-family-medicine-and-primary-care-02.jpg"],
+  "Global Health Summit 2022": ["assets/conferences/global-health-summit-2022-01.jpg", "assets/conferences/global-health-summit-2022-02.jpg", "assets/conferences/global-health-summit-2022-03.jpg", "assets/conferences/global-health-summit-2022-04.jpg"],
+  "Illuminati 2021": ["assets/conferences/illuminati-2021-01.jpg"],
+  "SIMSA — General Body Meet 2021": ["assets/conferences/simsa-general-body-meet-2021-01.jpg", "assets/conferences/simsa-general-body-meet-2021-02.jpg", "assets/conferences/simsa-general-body-meet-2021-03.jpg"],
+};
 
 const extracurriculars = {
   "Photography": [
-    ...Array.from({length: 9}, (_, i) => ({
-      image: `assets/extracurriculars/photography/photo-${String(i+1).padStart(2,"0")}.jpg`,
-      title: "Photography",
-      description: ""
-    }))
+    { image: "assets/extracurriculars/photography/photography-01.jpg", title: "Photography", description: "" },
+    { image: "assets/extracurriculars/photography/photography-02.jpg", title: "Photography", description: "" },
+    { image: "assets/extracurriculars/photography/photography-03.jpg", title: "Photography", description: "" },
+    { image: "assets/extracurriculars/photography/photography-04.jpg", title: "Photography", description: "" },
+    { image: "assets/extracurriculars/photography/photography-05.jpg", title: "Photography", description: "" },
+    { image: "assets/extracurriculars/photography/photography-06.jpg", title: "Photography", description: "" },
+    { image: "assets/extracurriculars/photography/photography-07.jpg", title: "Photography", description: "" },
+    { image: "assets/extracurriculars/photography/photography-08.jpg", title: "Photography", description: "" },
+    { image: "assets/extracurriculars/photography/photography-09.jpg", title: "Photography", description: "" },
   ],
   "Writing": [],
   "Sports": [
-    {image:"assets/extracurriculars/sports/sports-01.jpg",title:"Sports",description:""},
-    {image:"assets/extracurriculars/sports/sports-02.jpg",title:"Sports",description:""}
+    { image: "assets/extracurriculars/sports/sports-01.jpg", title: "Sports", description: "" },
+    { image: "assets/extracurriculars/sports/sports-02.jpg", title: "Sports", description: "" },
   ],
   "Others": []
 };
@@ -162,18 +162,14 @@ document.getElementById("publication-grid").innerHTML = publications.map(p => {
   </article>`;
 }).join("");
 
-document.getElementById("conference-grid").innerHTML = conferences.map((c,i) => {
-  const images = conferenceImages[c[1]] || [];
-  return `<article class="conference-card" data-conf="${i}">
+document.getElementById("conference-grid").innerHTML = conferences.map((c,i) => `
+  <article class="conference-card" data-conf="${i}">
     <div class="year">${c[0]}</div>
     <h3>${c[1]}</h3>
     <p>${c[2]}</p>
-    <span class="tag">${c[3]} · View gallery ↗</span>
-    <div class="conference-preview">
-      ${images.slice(0,3).map((src,j) => `<div class="conference-thumb"><img src="${src}" alt="${c[1]} photograph ${j+1}" loading="lazy"></div>`).join("")}
-    </div>
-  </article>`;
-}).join("");
+    <span class="tag">${c[3]} · View details ↗</span>
+  </article>
+`).join("");
 
 document.getElementById("award-list").innerHTML = awards.map((a,i) =>
   `<div class="award"><div class="award-num">${String(i+1).padStart(2,"0")}</div><strong>${a}</strong></div>`
@@ -191,62 +187,58 @@ document.querySelectorAll(".conference-card").forEach(card => {
     const c = conferences[Number(card.dataset.conf)];
     const images = conferenceImages[c[1]] || [];
 
+    const gallery = images.length
+      ? `<div class="gallery">
+          ${images.map((src, index) => `
+            <div class="media-item conference-media">
+              <img src="${src}" alt="${c[1]} — photograph ${index + 1}" loading="lazy">
+            </div>
+          `).join("")}
+         </div>`
+      : `<div class="modal-note">No photographs were supplied for this conference in the document.</div>`;
+
     modalContent.innerHTML = `
       <p class="eyebrow">${c[0]} · CONFERENCE</p>
       <h2>${c[1]}</h2>
       <div class="meta">${c[3]}</div>
       <p>${c[2]}</p>
-      <div class="gallery">
-        ${images.map((src, index) => `
-          <div class="media-item conference-media">
-            <img src="${src}" alt="${c[1]} — photograph ${index + 1}" loading="lazy"
-                 onerror="this.parentElement.classList.add('missing-image'); this.style.display='none';">
-            <div class="gallery-placeholder-fallback"><span>Photograph ${index + 1}</span><small>${src}</small></div>
-          </div>
-        `).join("")}
-      </div>
+      ${gallery}
     `;
+
     modal.classList.add("open");
     modal.setAttribute("aria-hidden","false");
   });
 });
 
-/* EXTRA CURRICULARS */
+/* ============================================================
+   EXTRA CURRICULARS
+   ============================================================ */
 const extracurricularGrid = document.getElementById("extracurricular-grid");
 const extracurricularTabs = document.querySelectorAll(".extracurricular-tab");
 
 function renderExtracurriculars(category) {
   if (!extracurricularGrid) return;
+
   const items = extracurriculars[category] || [];
-  if (!items.length) {
-    extracurricularGrid.innerHTML = `<div class="empty-category"><strong>${category === "Writing" ? "Coming soon." : "More to come."}</strong><p>This section will be updated with more of my ${category.toLowerCase()} work.</p></div>`;
-    return;
-  }
+
   extracurricularGrid.innerHTML = items.map((item, index) => `
-    <article class="extracurricular-card" data-extra-category="${category}" data-extra-index="${index}">
+    <article class="extracurricular-card">
       <div class="media-item extracurricular-media">
-        <img src="${item.image}" alt="${item.title} — ${category} ${index + 1}" loading="lazy"
+        <img src="${item.image}"
+             alt="${item.title} — ${category} ${index + 1}"
+             loading="lazy"
              onerror="this.parentElement.classList.add('missing-image'); this.style.display='none';">
-        <div class="gallery-placeholder-fallback"><span>${category}</span><small>${item.image}</small></div>
+        <div class="gallery-placeholder-fallback">
+          <span>${category}</span>
+          <small>${item.image}</small>
+        </div>
       </div>
-      <div class="extracurricular-card-content"><h3>${item.title}</h3>${item.description ? `<p>${item.description}</p>` : ""}</div>
+      <div class="extracurricular-card-content">
+        <h3>${item.title}</h3>
+        ${item.description ? `<p>${item.description}</p>` : ""}
+      </div>
     </article>
   `).join("");
-
-  extracurricularGrid.querySelectorAll(".extracurricular-card").forEach(card => {
-    card.addEventListener("click", () => {
-      const item = extracurriculars[category][Number(card.dataset.extraIndex)];
-      modalContent.innerHTML = `
-        <p class="eyebrow">EXTRA CURRICULARS · ${category.toUpperCase()}</p>
-        <h2>${item.title}</h2>
-        ${item.description ? `<div class="meta">${item.description}</div>` : ""}
-        <div class="gallery"><div class="media-item conference-media">
-          <img src="${item.image}" alt="${item.title}" loading="lazy">
-        </div></div>`;
-      modal.classList.add("open");
-      modal.setAttribute("aria-hidden","false");
-    });
-  });
 }
 
 extracurricularTabs.forEach(tab => {
@@ -256,7 +248,9 @@ extracurricularTabs.forEach(tab => {
     renderExtracurriculars(tab.dataset.category);
   });
 });
+
 renderExtracurriculars("Photography");
+
 
 document.querySelectorAll("[data-close]").forEach(el => el.addEventListener("click", closeModal));
 document.addEventListener("keydown", e => { if(e.key === "Escape") closeModal(); });
