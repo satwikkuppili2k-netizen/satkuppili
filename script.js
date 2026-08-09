@@ -95,6 +95,92 @@ const experiences = [
   ["Auricle","Speaker · Script writer","Paid educational app where medical education was taught through short videos of less than a minute."]
 ];
 
+
+/* ============================================================
+   IMAGE / MEDIA CONFIGURATION
+   ============================================================
+   Put your photographs in the paths below. The website will
+   automatically show them in the corresponding section.
+*/
+const aboutImages = [
+  "assets/about/about-01.jpg",
+  "assets/about/about-02.jpg",
+  "assets/about/about-03.jpg"
+];
+
+const conferenceImages = {
+  "Global Health Summit — AAPI": [
+    "assets/conferences/global-health-summit-aapi-01.jpg",
+    "assets/conferences/global-health-summit-aapi-02.jpg",
+    "assets/conferences/global-health-summit-aapi-03.jpg",
+    "assets/conferences/global-health-summit-aapi-04.jpg"
+  ]
+  // Add other conference galleries here using the exact conference name.
+};
+
+const extracurriculars = {
+  "Photography": [
+    {
+      image: "assets/extracurriculars/photography/photo-01.jpg",
+      title: "Photography",
+      description: ""
+    },
+    {
+      image: "assets/extracurriculars/photography/photo-02.jpg",
+      title: "Photography",
+      description: ""
+    },
+    {
+      image: "assets/extracurriculars/photography/photo-03.jpg",
+      title: "Photography",
+      description: ""
+    }
+  ],
+  "Writing": [
+    {
+      image: "assets/extracurriculars/writing/writing-01.jpg",
+      title: "Writing",
+      description: ""
+    },
+    {
+      image: "assets/extracurriculars/writing/writing-02.jpg",
+      title: "Writing",
+      description: ""
+    }
+  ],
+  "Sports": [
+    {
+      image: "assets/extracurriculars/sports/sports-01.jpg",
+      title: "Sports",
+      description: ""
+    },
+    {
+      image: "assets/extracurriculars/sports/sports-02.jpg",
+      title: "Sports",
+      description: ""
+    }
+  ],
+  "Others": [
+    {
+      image: "assets/extracurriculars/others/other-01.jpg",
+      title: "Others",
+      description: ""
+    },
+    {
+      image: "assets/extracurriculars/others/other-02.jpg",
+      title: "Others",
+      description: ""
+    }
+  ]
+};
+
+function imageMarkup(src, alt, className = "") {
+  return `
+    <img class="${className}" src="${src}" alt="${alt}" loading="lazy"
+         onerror="this.closest('.media-item')?.classList.add('missing-image'); this.style.display='none';">
+  `;
+}
+
 document.getElementById("publication-grid").innerHTML = publications.map(p => {
   const link = publicationLinks[p[0]];
   return `<article class="publication-card">
@@ -130,23 +216,79 @@ document.querySelectorAll(".conference-card").forEach(card => {
   card.addEventListener("click", () => {
     const c = conferences[Number(card.dataset.conf)];
     const slug = c[1].toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/(^-|-$)/g,"");
+    const images = conferenceImages[c[1]] || [
+      `assets/conferences/${slug}-01.jpg`,
+      `assets/conferences/${slug}-02.jpg`,
+      `assets/conferences/${slug}-03.jpg`,
+      `assets/conferences/${slug}-04.jpg`
+    ];
+
     modalContent.innerHTML = `
       <p class="eyebrow">${c[0]} · CONFERENCE</p>
       <h2>${c[1]}</h2>
       <div class="meta">${c[3]}</div>
       <p>${c[2]}</p>
+
       <div class="gallery">
-        <div class="gallery-placeholder">Add conference photograph<br><small>assets/conferences/${slug}-01.jpg</small></div>
-        <div class="gallery-placeholder">Add poster / certificate<br><small>assets/conferences/${slug}-02.jpg</small></div>
-        <div class="gallery-placeholder">Add presentation photograph<br><small>assets/conferences/${slug}-03.jpg</small></div>
-        <div class="gallery-placeholder">Add another image<br><small>assets/conferences/${slug}-04.jpg</small></div>
+        ${images.map((src, index) => `
+          <div class="media-item conference-media">
+            <img src="${src}" alt="${c[1]} — photograph ${index + 1}" loading="lazy"
+                 onerror="this.parentElement.classList.add('missing-image'); this.style.display='none';">
+            <div class="gallery-placeholder-fallback">
+              <span>Photograph ${index + 1}</span>
+              <small>${src}</small>
+            </div>
+          </div>
+        `).join("")}
       </div>
-      <div class="modal-note">When you send the photographs, this gallery can be populated with the real images. The same structure works for every conference.</div>
     `;
+
     modal.classList.add("open");
     modal.setAttribute("aria-hidden","false");
   });
 });
+
+/* ============================================================
+   EXTRA CURRICULARS
+   ============================================================ */
+const extracurricularGrid = document.getElementById("extracurricular-grid");
+const extracurricularTabs = document.querySelectorAll(".extracurricular-tab");
+
+function renderExtracurriculars(category) {
+  if (!extracurricularGrid) return;
+
+  const items = extracurriculars[category] || [];
+
+  extracurricularGrid.innerHTML = items.map((item, index) => `
+    <article class="extracurricular-card">
+      <div class="media-item extracurricular-media">
+        <img src="${item.image}"
+             alt="${item.title} — ${category} ${index + 1}"
+             loading="lazy"
+             onerror="this.parentElement.classList.add('missing-image'); this.style.display='none';">
+        <div class="gallery-placeholder-fallback">
+          <span>${category}</span>
+          <small>${item.image}</small>
+        </div>
+      </div>
+      <div class="extracurricular-card-content">
+        <h3>${item.title}</h3>
+        ${item.description ? `<p>${item.description}</p>` : ""}
+      </div>
+    </article>
+  `).join("");
+}
+
+extracurricularTabs.forEach(tab => {
+  tab.addEventListener("click", () => {
+    extracurricularTabs.forEach(t => t.classList.remove("active"));
+    tab.classList.add("active");
+    renderExtracurriculars(tab.dataset.category);
+  });
+});
+
+renderExtracurriculars("Photography");
+
 
 document.querySelectorAll("[data-close]").forEach(el => el.addEventListener("click", closeModal));
 document.addEventListener("keydown", e => { if(e.key === "Escape") closeModal(); });

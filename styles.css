@@ -23,3 +23,58 @@ footer{padding:30px 8vw;display:flex;justify-content:space-between;border-top:1p
 
 @media(max-width:900px){nav{display:none}.hero{grid-template-columns:1fr}.hero-panel{min-height:330px}.research-grid{grid-template-columns:1fr 1fr}.two-column,.contact-grid{grid-template-columns:1fr}.publication-grid,.conference-grid{grid-template-columns:1fr}.row-heading{display:block}.section{padding:75px 7vw}.timeline-item{grid-template-columns:1fr}.skills{grid-template-columns:1fr}.cv-banner{display:block}.cv-banner .hero-actions{margin-top:25px}.hero-stats{gap:20px;flex-wrap:wrap}}
 @media(max-width:560px){.site-header{height:64px}.header-cv{display:none}.hero h1{font-size:65px}.research-grid{grid-template-columns:1fr}.research-grid article,.research-grid article:not(:first-child){padding-left:0;border-right:0;border-bottom:1px solid #34363d}.gallery{grid-template-columns:1fr}footer{display:block}footer div+div{margin-top:8px}}
+
+/* ============================================================
+   ABOUT IMAGE GALLERY
+   ============================================================ */
+.about-layout{display:flex;flex-direction:column;gap:55px}
+.about-gallery{display:grid;grid-template-columns:1.35fr .65fr;gap:18px}
+.about-main-image,.about-side-images>div{position:relative;overflow:hidden;background:#e5e4de;min-height:360px}
+.about-main-image img,.about-side-images img{width:100%;height:100%;object-fit:cover;display:block}
+.about-side-images{display:grid;grid-template-rows:1fr 1fr;gap:18px}
+.about-side-images>div{min-height:171px}
+.about-copy{width:100%}
+
+/* ============================================================
+   IMAGE FALLBACKS
+   ============================================================ */
+.media-item{position:relative;overflow:hidden;background:#e5e4de}
+.media-item img{width:100%;height:100%;object-fit:cover;display:block}
+.gallery-placeholder-fallback{display:none;position:absolute;inset:0;align-items:center;justify-content:center;flex-direction:column;text-align:center;padding:20px;color:#777;background:#e5e4de;font-size:11px}
+.gallery-placeholder-fallback small{display:block;margin-top:8px;font-size:9px;word-break:break-word;color:#999}
+.media-item.missing-image .gallery-placeholder-fallback{display:flex}
+
+/* ============================================================
+   EXTRA CURRICULARS
+   ============================================================ */
+.extracurricular-tabs{display:flex;gap:0;border-bottom:1px solid var(--line);margin-bottom:35px;overflow-x:auto}
+.extracurricular-tab{appearance:none;background:none;border:0;border-bottom:2px solid transparent;padding:14px 24px 13px;font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);cursor:pointer;white-space:nowrap}
+.extracurricular-tab:first-child{padding-left:0}
+.extracurricular-tab:hover{color:var(--ink)}
+.extracurricular-tab.active{color:var(--ink);border-bottom-color:var(--ink)}
+.extracurricular-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.extracurricular-card{background:var(--white);border:1px solid var(--line);overflow:hidden}
+.extracurricular-media{aspect-ratio:4/3}
+.extracurricular-card-content{padding:18px 20px 22px}
+.extracurricular-card-content h3{font-size:17px;margin:0}
+.extracurricular-card-content p{font-size:12px;color:var(--muted);margin:7px 0 0}
+
+/* ============================================================
+   CONFERENCE GALLERIES
+   ============================================================ */
+.conference-media{min-height:260px}
+.conference-media img{width:100%;height:100%;object-fit:cover}
+.conference-media .gallery-placeholder-fallback{font-size:11px}
+
+@media(max-width:900px){
+  .about-gallery{grid-template-columns:1fr}
+  .about-side-images{grid-template-columns:1fr 1fr;grid-template-rows:none}
+  .about-side-images>div{min-height:220px}
+  .extracurricular-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:560px){
+  .about-side-images{grid-template-columns:1fr}
+  .about-side-images>div{min-height:250px}
+  .extracurricular-grid{grid-template-columns:1fr}
+  .extracurricular-tab{padding-left:15px;padding-right:15px}
+}

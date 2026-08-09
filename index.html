@@ -17,6 +17,7 @@
       <a href="#conferences">Conferences</a>
       <a href="#awards">Awards</a>
       <a href="#experience">Experience</a>
+      <a href="#extracurriculars">Extra Curriculars</a>
       <a href="#contact">Contact</a>
     </nav>
     <a class="header-cv" href="cv.pdf" target="_blank" rel="noopener">View CV ↗</a>
@@ -25,44 +26,65 @@
   <main>
     <section id="home" class="hero section">
       <div class="hero-copy">
-        <p class="eyebrow">PHYSICIAN · MEDICAL RESEARCHER</p>
+        <p class="eyebrow">PHYSICIAN · RESEARCHER · PHOTOGRAPHER</p>
         <h1>Satwik<br><em>Kuppili</em></h1>
-        <p class="hero-text">Building a career at the intersection of clinical medicine, evidence-based research, medical education and innovation.</p>
+        <p class="hero-text">Building a career at the intersection of medicine, research, photography, education, innovation and a lot more.</p>
         <div class="hero-actions">
           <a class="button primary" href="cv.pdf" target="_blank">View Curriculum Vitae</a>
           <a class="button secondary" href="#research">Explore Research</a>
         </div>
         <div class="hero-stats">
-          <div><strong>17+</strong><span>research works listed</span></div>
-          <div><strong>14</strong><span>awards & distinctions</span></div>
-          <div><strong>14</strong><span>conference entries</span></div>
+          <div><strong>20+</strong><span>publications</span></div>
+          <div><strong>15+</strong><span>awards & distinctions</span></div>
+          <div><strong>15+</strong><span>conference entries</span></div>
         </div>
       </div>
       <div class="hero-panel">
         <div class="panel-kicker">PROFILE</div>
-        <div class="panel-title">Evidence.<br>Research.<br><span>Medicine.</span></div>
+        <div class="panel-title">Medicine.<br>Research.<br><span>Photography.</span><br>and a lot more.</div>
         <div class="panel-line"></div>
-        <p>Physician · Researcher · Educator · Speaker</p>
+        <p>Physician · Researcher · Educator · Photographer</p>
       </div>
     </section>
 
     <section id="about" class="section light">
       <div class="section-heading">
         <p class="eyebrow">01 · ABOUT</p>
-        <h2>A portfolio built around<br><em>medicine and research.</em></h2>
+        <h2>Still figuring<br><em>it out.</em></h2>
       </div>
-      <div class="two-column">
-        <div class="lead">
-          <p>I am a post-intern physician and USMLE aspirant actively pursuing opportunities in Internal Medicine residency in the United States.</p>
-          <p>My work spans clinical research, systematic reviews and meta-analyses, medical education, student leadership, public speaking and healthcare innovation.</p>
+      <div class="about-layout">
+        <div class="about-gallery">
+          <div class="about-main-image media-item">
+            <img src="assets/about/about-01.jpg" alt="Satwik Kuppili" loading="lazy"
+                 onerror="this.parentElement.classList.add('missing-image'); this.style.display='none';">
+            <div class="gallery-placeholder-fallback"><span>About photograph</span><small>assets/about/about-01.jpg</small></div>
+          </div>
+          <div class="about-side-images">
+            <div class="media-item">
+              <img src="assets/about/about-02.jpg" alt="Satwik Kuppili — about" loading="lazy"
+                   onerror="this.parentElement.classList.add('missing-image'); this.style.display='none';">
+              <div class="gallery-placeholder-fallback"><span>About photograph</span><small>assets/about/about-02.jpg</small></div>
+            </div>
+            <div class="media-item">
+              <img src="assets/about/about-03.jpg" alt="Satwik Kuppili — about" loading="lazy"
+                   onerror="this.parentElement.classList.add('missing-image'); this.style.display='none';">
+              <div class="gallery-placeholder-fallback"><span>About photograph</span><small>assets/about/about-03.jpg</small></div>
+            </div>
+          </div>
         </div>
-        <div class="info-card">
-          <span>EDUCATION</span>
-          <h3>Konaseema Institute of Medical Sciences</h3>
-          <p>MBBS · 2018–2024</p>
-          <div class="rule"></div>
-          <span>INTEREST</span>
-          <p>Clinical medicine · Evidence synthesis · Medical education · Healthcare innovation</p>
+        <div class="two-column about-copy">
+          <div class="lead">
+            <p>I am a post-intern physician and USMLE aspirant actively pursuing opportunities in Internal Medicine residency in the United States.</p>
+            <p>My work spans clinical research, systematic reviews and meta-analyses, medical education, student leadership, public speaking and healthcare innovation.</p>
+          </div>
+          <div class="info-card">
+            <span>EDUCATION</span>
+            <h3>Konaseema Institute of Medical Sciences</h3>
+            <p>MBBS · 2018–2024</p>
+            <div class="rule"></div>
+            <span>INTEREST</span>
+            <p>Clinical medicine · Evidence synthesis · Medical education · Healthcare innovation · Photography</p>
+          </div>
         </div>
       </div>
     </section>
@@ -117,6 +139,25 @@
       </div>
     </section>
 
+    <section id="extracurriculars" class="section offwhite">
+      <div class="section-heading row-heading">
+        <div>
+          <p class="eyebrow">07 · EXTRA CURRICULARS</p>
+          <h2>Beyond <em>medicine.</em></h2>
+        </div>
+        <p class="muted">The things I pursue outside clinical work — photography, writing, sports and everything else that keeps me curious.</p>
+      </div>
+
+      <div class="extracurricular-tabs" role="tablist" aria-label="Extra curricular categories">
+        <button class="extracurricular-tab active" data-category="Photography" role="tab">Photography</button>
+        <button class="extracurricular-tab" data-category="Writing" role="tab">Writing</button>
+        <button class="extracurricular-tab" data-category="Sports" role="tab">Sports</button>
+        <button class="extracurricular-tab" data-category="Others" role="tab">Others</button>
+      </div>
+
+      <div id="extracurricular-grid" class="extracurricular-grid"></div>
+    </section>
+
     <section class="section cv-banner">
       <div>
         <p class="eyebrow">CURRICULUM VITAE</p>
@@ -130,7 +171,7 @@
 
     <section id="contact" class="section light contact">
       <div class="section-heading">
-        <p class="eyebrow">07 · CONTACT</p>
+        <p class="eyebrow">08 · CONTACT</p>
         <h2>Let's connect.</h2>
       </div>
       <div class="contact-grid">
