@@ -45,21 +45,23 @@ const publicationLinks = {
 };
 
 const conferences = [
-  ["2026","Global Health Summit — AAPI","Presented a poster and won 3rd place in the poster presentation.","3rd place · Poster Presentation"],
-  ["2025","Humans of USMLE","Presented 2 posters.","2 posters"],
-  ["2023","APMEDUCON 13","Smt. C. Janaki Medal for Best Paper; 2nd place for Best Poster.","Best Paper · Best Poster"],
-  ["2023","Southern Medical Students Annual Research Conference","Best Case Presentation award; presented paper, poster and case.","Best Case Presentation"],
-  ["2023","GOMECON — Goa Medical College","1st place in Med Hackathon; 2nd place in AI Simulation Medicine.","1st · 2nd"],
-  ["2022","SIMSA — General Body Meet","Represented Andhra Pradesh in the South Indian Medical Students Association's first General Conclave.","Represented Andhra Pradesh"],
-  ["2022","Illuminati — AFMC","Research paper presentation and Ideathon; completed Emergency and Trauma Surgery workshops.","Presentation · Ideathon · Workshop"],
-  ["2022","FMPC — Family Medicine and Primary Care","Represented GAIMS at the annual conference.","GAIMS representative"],
-  ["2022","Insight — AIIMS New Delhi","Research presentation, case presentation and online Ideathon; completed ECG workshop.","Research · Case · Ideathon · ECG"],
-  ["2022","SIMSA — General Conclave","Organising committee of the General Conclave of the South Indian Medical Students Association.","Organising committee"],
-  ["2022","GOMECON — Goa Medical College","Poster presentation; Top-10 in paper presentation; 3rd place in Med-Hackathon.","Poster · Top-10 · 3rd place"],
-  ["2022","Southern Medical Students Annual Research Conference (SMARC)","1st place in Research Paper presentation; consolation prize in Case presentation.","1st place · Case presentation"],
-  ["2022","9th World Congress of Neurosurgery — Jaipur","Received a $500 scholarship from the Walter E. Dandy Neurosurgical Society.","$500 scholarship"],
-  ["2022","Humans of USMLE — Hyderabad","Presented a case as a poster.","Poster presentation"],
-  ["2022","JIPMER Conniassance","Top 10 and presented research.","Top 10 · Research"]
+  ["2026","Global Health Summit — AAPI","Bhubaneswar, Orissia · Won 3rd place in poster presentation.","3rd place · Poster Presentation","global-health-summit-aapi-2026"],
+  ["2025","REDRESS 2025","Tata Institute for Genetics and Society, Bangalore · Presented a rare genetic case.","Rare Genetic Case Presentation","redress-2025"],
+  ["2025","HOU Summit 2025","Hyderabad · Presented 2 posters.","2 Poster Presentations","hou-summit-2025"],
+  ["2023","APMEDUCON 13","Srikakulam, Andhra Pradesh · Awarded the Smt. C. Janaki Medal for Best Paper Presentation; 2nd place for Best Poster.","Best Paper · 2nd Best Poster","apmeducon-13-2023"],
+  ["2023","GOMECON — Goa Medical College","Goa Medical College, Goa · Won 1st place in Med Hackathon; 2nd place in AI Simulation Medicine.","1st · 2nd","gomecon-2023"],
+  ["2023","Southern Medical Students Annual Research Conference","KIMS, Amalapuram · Won Best Case Presentation award; presented paper, poster and case.","Best Case Presentation","smarc-2023"],
+  ["2023","HOU Summit 2023","Hyderabad · Presented a case in the form of a poster.","Case Poster","hou-summit-2023"],
+  ["2023","JIPMER Conniassance","JIPMER, Pondicherry · Final Top 10 and presented research.","Top 10 · Research","jipmer-conniassance-2023"],
+  ["2023","9th World Congress of Neurosurgery","Vijayran Palace, Jaipur · Received a $500 scholarship from the Walter E. Dandy Neurosurgical Society.","$500 Scholarship","9th-world-congress-neurosurgery-2023"],
+  ["2022","Southern Medical Students Annual Research Conference (SMARC)","KIMS, Amalapuram · First place in Research Paper presentation; consolation prize in Case presentation.","1st Place · Case Presentation","smarc-2022"],
+  ["2022","GOMECON — Goa Medical College","Goa Medical College, Goa · Poster presentation; Top-10 in paper presentation (out of more than 100); 3rd place in Med-Hackathon.","Poster · Top-10 · 3rd Place","gomecon-2022"],
+  ["2022","SIMSA — General Conclave","Chennai · Organising Committee of the General Conclave of the South Indian Medical Students Association.","Organising Committee","simsa-general-conclave-2022"],
+  ["2022","Insight — AIIMS New Delhi","AIIMS, New Delhi · Participated in Research presentation and case presentation.","Research · Case Presentation","insight-2022-aiims"],
+  ["2022","FMPC — Family Medicine and Primary Care","Apollo Institute of Medical Sciences, Hyderabad · Awarded National Student Award; represented GAIMS at the annual conference.","National Student Award · GAIMS Representative","fmpc-2022"],
+  ["2022","Global Health Summit","Hyderabad · Co-organiser; awarded Award of Excellence.","Co-organiser · Award of Excellence","global-health-summit-2022"],
+  ["2021","Illuminati — AFMC","Armed Forces Medical College (AFMC), Pune · Participated in Research Paper presentation.","Research Paper Presentation","illuminati-2021-afmc"],
+  ["2021","SIMSA — General Body Meet","Pondicherry · Represented Andhra Pradesh in the South Indian Medical Students Association's first General Conclave.","Represented Andhra Pradesh","simsa-general-body-meet-2021"]
 ];
 
 const awards = [
@@ -95,83 +97,51 @@ const experiences = [
   ["Auricle","Speaker · Script writer","Paid educational app where medical education was taught through short videos of less than a minute."]
 ];
 
-
-/* ============================================================
-   IMAGE / MEDIA CONFIGURATION
-   ============================================================
-   Put your photographs in the paths below. The website will
-   automatically show them in the corresponding section.
-*/
 const aboutImages = [
   "assets/about/about-01.jpg",
-  "assets/about/about-02.jpg",
-  "assets/about/about-03.jpg"
+  "assets/about/about-02.jpg"
 ];
 
-const conferenceImages = {
-  "Global Health Summit — AAPI": [
-    "assets/conferences/global-health-summit-aapi-01.jpg",
-    "assets/conferences/global-health-summit-aapi-02.jpg",
-    "assets/conferences/global-health-summit-aapi-03.jpg",
-    "assets/conferences/global-health-summit-aapi-04.jpg"
-  ]
-  // Add other conference galleries here using the exact conference name.
-};
+const conferenceImages = {};
+conferences.forEach(c => {
+  const countBySlug = {
+    "global-health-summit-aapi-2026": 4,
+    "redress-2025": 2,
+    "hou-summit-2025": 3,
+    "apmeducon-13-2023": 3,
+    "gomecon-2023": 3,
+    "smarc-2023": 3,
+    "hou-summit-2023": 2,
+    "jipmer-conniassance-2023": 3,
+    "9th-world-congress-neurosurgery-2023": 4,
+    "smarc-2022": 3,
+    "gomecon-2022": 2,
+    "simsa-general-conclave-2022": 1,
+    "insight-2022-aiims": 2,
+    "fmpc-2022": 1,
+    "global-health-summit-2022": 3,
+    "illuminati-2021-afmc": 1,
+    "simsa-general-body-meet-2021": 3
+  };
+  conferenceImages[c[1]] = Array.from({length: countBySlug[c[4]]}, (_, i) =>
+    `assets/conferences/${c[4]}-${String(i+1).padStart(2,"0")}.jpg`
+  );
+});
 
 const extracurriculars = {
   "Photography": [
-    {
-      image: "assets/extracurriculars/photography/photo-01.jpg",
+    ...Array.from({length: 9}, (_, i) => ({
+      image: `assets/extracurriculars/photography/photo-${String(i+1).padStart(2,"0")}.jpg`,
       title: "Photography",
       description: ""
-    },
-    {
-      image: "assets/extracurriculars/photography/photo-02.jpg",
-      title: "Photography",
-      description: ""
-    },
-    {
-      image: "assets/extracurriculars/photography/photo-03.jpg",
-      title: "Photography",
-      description: ""
-    }
+    }))
   ],
-  "Writing": [
-    {
-      image: "assets/extracurriculars/writing/writing-01.jpg",
-      title: "Writing",
-      description: ""
-    },
-    {
-      image: "assets/extracurriculars/writing/writing-02.jpg",
-      title: "Writing",
-      description: ""
-    }
-  ],
+  "Writing": [],
   "Sports": [
-    {
-      image: "assets/extracurriculars/sports/sports-01.jpg",
-      title: "Sports",
-      description: ""
-    },
-    {
-      image: "assets/extracurriculars/sports/sports-02.jpg",
-      title: "Sports",
-      description: ""
-    }
+    {image:"assets/extracurriculars/sports/sports-01.jpg",title:"Sports",description:""},
+    {image:"assets/extracurriculars/sports/sports-02.jpg",title:"Sports",description:""}
   ],
-  "Others": [
-    {
-      image: "assets/extracurriculars/others/other-01.jpg",
-      title: "Others",
-      description: ""
-    },
-    {
-      image: "assets/extracurriculars/others/other-02.jpg",
-      title: "Others",
-      description: ""
-    }
-  ]
+  "Others": []
 };
 
 function imageMarkup(src, alt, className = "") {
@@ -192,14 +162,18 @@ document.getElementById("publication-grid").innerHTML = publications.map(p => {
   </article>`;
 }).join("");
 
-document.getElementById("conference-grid").innerHTML = conferences.map((c,i) => `
-  <article class="conference-card" data-conf="${i}">
+document.getElementById("conference-grid").innerHTML = conferences.map((c,i) => {
+  const images = conferenceImages[c[1]] || [];
+  return `<article class="conference-card" data-conf="${i}">
     <div class="year">${c[0]}</div>
     <h3>${c[1]}</h3>
     <p>${c[2]}</p>
-    <span class="tag">${c[3]} · View details ↗</span>
-  </article>
-`).join("");
+    <span class="tag">${c[3]} · View gallery ↗</span>
+    <div class="conference-preview">
+      ${images.slice(0,3).map((src,j) => `<div class="conference-thumb"><img src="${src}" alt="${c[1]} photograph ${j+1}" loading="lazy"></div>`).join("")}
+    </div>
+  </article>`;
+}).join("");
 
 document.getElementById("award-list").innerHTML = awards.map((a,i) =>
   `<div class="award"><div class="award-num">${String(i+1).padStart(2,"0")}</div><strong>${a}</strong></div>`
@@ -215,68 +189,64 @@ const modalContent = document.getElementById("modal-content");
 document.querySelectorAll(".conference-card").forEach(card => {
   card.addEventListener("click", () => {
     const c = conferences[Number(card.dataset.conf)];
-    const slug = c[1].toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/(^-|-$)/g,"");
-    const images = conferenceImages[c[1]] || [
-      `assets/conferences/${slug}-01.jpg`,
-      `assets/conferences/${slug}-02.jpg`,
-      `assets/conferences/${slug}-03.jpg`,
-      `assets/conferences/${slug}-04.jpg`
-    ];
+    const images = conferenceImages[c[1]] || [];
 
     modalContent.innerHTML = `
       <p class="eyebrow">${c[0]} · CONFERENCE</p>
       <h2>${c[1]}</h2>
       <div class="meta">${c[3]}</div>
       <p>${c[2]}</p>
-
       <div class="gallery">
         ${images.map((src, index) => `
           <div class="media-item conference-media">
             <img src="${src}" alt="${c[1]} — photograph ${index + 1}" loading="lazy"
                  onerror="this.parentElement.classList.add('missing-image'); this.style.display='none';">
-            <div class="gallery-placeholder-fallback">
-              <span>Photograph ${index + 1}</span>
-              <small>${src}</small>
-            </div>
+            <div class="gallery-placeholder-fallback"><span>Photograph ${index + 1}</span><small>${src}</small></div>
           </div>
         `).join("")}
       </div>
     `;
-
     modal.classList.add("open");
     modal.setAttribute("aria-hidden","false");
   });
 });
 
-/* ============================================================
-   EXTRA CURRICULARS
-   ============================================================ */
+/* EXTRA CURRICULARS */
 const extracurricularGrid = document.getElementById("extracurricular-grid");
 const extracurricularTabs = document.querySelectorAll(".extracurricular-tab");
 
 function renderExtracurriculars(category) {
   if (!extracurricularGrid) return;
-
   const items = extracurriculars[category] || [];
-
+  if (!items.length) {
+    extracurricularGrid.innerHTML = `<div class="empty-category"><strong>${category === "Writing" ? "Coming soon." : "More to come."}</strong><p>This section will be updated with more of my ${category.toLowerCase()} work.</p></div>`;
+    return;
+  }
   extracurricularGrid.innerHTML = items.map((item, index) => `
-    <article class="extracurricular-card">
+    <article class="extracurricular-card" data-extra-category="${category}" data-extra-index="${index}">
       <div class="media-item extracurricular-media">
-        <img src="${item.image}"
-             alt="${item.title} — ${category} ${index + 1}"
-             loading="lazy"
+        <img src="${item.image}" alt="${item.title} — ${category} ${index + 1}" loading="lazy"
              onerror="this.parentElement.classList.add('missing-image'); this.style.display='none';">
-        <div class="gallery-placeholder-fallback">
-          <span>${category}</span>
-          <small>${item.image}</small>
-        </div>
+        <div class="gallery-placeholder-fallback"><span>${category}</span><small>${item.image}</small></div>
       </div>
-      <div class="extracurricular-card-content">
-        <h3>${item.title}</h3>
-        ${item.description ? `<p>${item.description}</p>` : ""}
-      </div>
+      <div class="extracurricular-card-content"><h3>${item.title}</h3>${item.description ? `<p>${item.description}</p>` : ""}</div>
     </article>
   `).join("");
+
+  extracurricularGrid.querySelectorAll(".extracurricular-card").forEach(card => {
+    card.addEventListener("click", () => {
+      const item = extracurriculars[category][Number(card.dataset.extraIndex)];
+      modalContent.innerHTML = `
+        <p class="eyebrow">EXTRA CURRICULARS · ${category.toUpperCase()}</p>
+        <h2>${item.title}</h2>
+        ${item.description ? `<div class="meta">${item.description}</div>` : ""}
+        <div class="gallery"><div class="media-item conference-media">
+          <img src="${item.image}" alt="${item.title}" loading="lazy">
+        </div></div>`;
+      modal.classList.add("open");
+      modal.setAttribute("aria-hidden","false");
+    });
+  });
 }
 
 extracurricularTabs.forEach(tab => {
@@ -286,9 +256,7 @@ extracurricularTabs.forEach(tab => {
     renderExtracurriculars(tab.dataset.category);
   });
 });
-
 renderExtracurriculars("Photography");
-
 
 document.querySelectorAll("[data-close]").forEach(el => el.addEventListener("click", closeModal));
 document.addEventListener("keydown", e => { if(e.key === "Escape") closeModal(); });
